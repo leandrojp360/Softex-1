@@ -1,3 +1,3 @@
 # Softex
 Edmar Brasil
-Repostorio Público de  tarbalhos elaborados para o curso da Softex
+Repostorio Público de  trrbalhos elaborados para o curso da Softex
