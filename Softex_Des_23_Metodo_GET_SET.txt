@@ -1,0 +1,43 @@
+# Crie uma classe e insira nela, no mínimo, dois atributos, os quais devem ter um método acessor (get) e um método modificador (set) para cada. 
+# Defina um objeto para cada atributo e elabore um construtor para criar alguma regra.
+
+# A atividade pode ser realizada em qualquer linguagem de programação ou apenas utilizando algoritmos.
+
+************************************************************************************************************
+
+# Get é usado quando precisamos "buscar OU obter" uma informação de atributos privados de uma classe para que possam ser buscados/modificados fora dela;
+# Sempre para cada instância de variável, um método getter retorna seu valor,
+
+# Set é usado quando precisamos "alterar OU definir" uma informação de atributos privados de uma classe para que possam ser buscados/modificados fora dela;
+# Sempre para cada instância de variável, um método setter o define ou atualiza, geralmente não retorna valor.
+
+# O construtor é um método que geralmente é responsável pela alocação de recursos necessários ao funcionamento do objeto além da definição inicial 
+# das variáveis de estado (atributos)
+
+# Em Python normalmente é usado o método __init__ para definir os valores dos atributos.
+
+***********************************************************************************************************
+class Pessoa():
+    def __init__(self, nome, sexo):
+        self.__nome = nome
+        self.__sexo = sexo
+   
+    def nomeGet(self):
+        return self.__nome
+
+    def nomeSet(self, nome):
+        self.__nome = nome
+
+    def sexoGet(self):
+        return self.__sexo
+
+    def sexoSet(self, sexo):
+        self.__sexo = sexo
+
+if __name__ == "__main__":
+    pessoa1 = Pessoa("João", "M")
+    print(pessoa1.nome)
+else:
+    pessoa2 = Pessoa("Maria", "F")
+    print(pessoa2.nome)
+
